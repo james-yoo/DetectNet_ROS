@@ -1,0 +1,5 @@
+detectnet_node:
+    prototxt_path: "/home/nvidia/jetson-inference/build/aarch64/bin/networks/facenet-120/deploy.prototxt"
+    model_path: "/home/nvidia/jetson-inference/build/aarch64/bin/networks/facenet-120/snapshot_iter_24000.caffemodel"
+    mean_binary_path: ""
+

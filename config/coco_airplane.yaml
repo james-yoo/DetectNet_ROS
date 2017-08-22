@@ -1,0 +1,5 @@
+detectnet_node:
+    prototxt_path: "/home/nvidia/jetson-inference/build/aarch64/bin/networks/DetectNet-COCO-Airplane/deploy.prototxt"
+    model_path: "/home/nvidia/jetson-inference/build/aarch64/bin/networks/DetectNet-COCO-Airplane/snapshot_iter_22500.caffemodel"
+    mean_binary_path: "/home/nvidia/jetson-inference/build/aarch64/bin/networks/DetectNet-COCO-Airplane/mean.binaryproto"
+

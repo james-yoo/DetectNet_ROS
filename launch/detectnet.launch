@@ -1,0 +1,22 @@
+<launch>
+    <!-- set network model for detectNet -->
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/pednet_multi.yaml" command="load"/>-->
+    <rosparam  file="$(find ros_detectnet_zed)/config/facenet.yaml" command="load"/>
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/pednet.yaml" command="load"/>-->
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/coco_airplane.yaml" command="load"/>-->
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/coco_bottle.yaml" command="load"/>-->
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/coco_chair.yaml" command="load"/>-->
+    <!--<rosparam  file="$(find ros_detectnet_zed)/config/coco_dog.yaml" command="load"/>-->
+
+    <!-- Nodelet manager -->
+    <node pkg="nodelet" type="nodelet" name="standalone_nodelet"  args="manager" output="screen"/>
+
+    <!-- ros_detectnet nodelet using '/zed/rgb/image_raw_color' topic-->
+    <node name="detectnet_node"
+          pkg="nodelet" type="nodelet"
+          args="load ros_detectnet_zed/ros_detectnet standalone_nodelet"
+          output="screen">
+	  <remap from="~imin" to="/zed/rgb/image_raw_color"/>
+    </node>
+
+</launch>
