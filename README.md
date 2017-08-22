@@ -5,6 +5,7 @@ ROS topic can be used as image input(Stereolab's ZED camera is used for implemen
   
 # Pre-requisite
 - Jetson TX2 with JetPack 3.1(R28.1)
+- Stereolabs ZED camera with SDK 2.0.1
 - TensorRT 2.1
 - CUDA 8.0
 - cuDNN 6.1
