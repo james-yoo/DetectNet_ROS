@@ -1,0 +1,5 @@
+<library path="lib/libros_detectnet_zed_nodelets">
+    <class name="ros_detectnet_zed/ros_detectnet" type="ros_detectnet_zed::ros_detectnet" base_class_type="nodelet::Nodelet">
+        <description>A node to detect images according to detection networks</description>
+    </class>
+</library>

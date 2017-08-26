@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ros_detectnet_zed</name>
+  <name>ros_detectnet_camera</name>
   <version>0.1.0</version>
   <description>detectNet implementation based on ros topic of ZED image</description>
 
@@ -39,7 +39,7 @@
   <run_depend>std_msgs</run_depend>
 
 
-  <export>
+  <!--<export>
       <nodelet plugin="${prefix}/ros-detectnet-zed-nodelets.xml"/>
-  </export>
+  </export>-->
 </package>

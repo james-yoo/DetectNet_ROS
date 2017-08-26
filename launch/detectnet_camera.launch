@@ -1,0 +1,7 @@
+<launch>  
+  <param name="type" value="pednet_multi" />
+  <param name="ros_topic" value="/zed/rgb/image_raw_color" />
+
+  <node name="ros_detectnet_camera_node" pkg="ros_detectnet_camera" type="ros_detectnet_camera_node" output="screen" />
+
+</launch>
